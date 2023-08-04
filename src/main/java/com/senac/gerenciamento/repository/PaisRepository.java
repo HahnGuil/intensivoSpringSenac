@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface PaisRepository extends JpaRepository<Pais, Long>, QuerydslPredicateExecutor<Pais> {
+public interface PaisRepository extends JpaRepository<Pais, Long>{
 
     List<Pais> findByNome(String nome);
 
